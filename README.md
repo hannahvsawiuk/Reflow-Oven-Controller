@@ -1,14 +1,16 @@
-# User-Interface
+Reflow Oven Controller
 
-§  Selectable parameters
+Microcontroller: AT89LP52 
+User interface includes:
+  Selectable parameters
 ·   	Soak temperature
 ·   	Soak time
 ·   	Reflow temperature
 ·   	Reflow time
-§  Interface using pushbuttons
+  Interface using pushbuttons
 ·   	Select buttons
 ·   	Start/stop button: must halt process completely (oven off)
-§  Display
+  Display
 ·   	Temperature
 ·   	Running time
 ·   	Reflow process current state
