@@ -5,7 +5,6 @@ CSEG
 ; ELEC 291, Project 1, Reflow Oven Controller
 ; macros.inc
 
-
 ;-------------------------------------------;
 ;                Functions                  ;
 ;-------------------------------------------;
@@ -112,19 +111,8 @@ endmac
     lcall putchar
     pop acc
 	ret
-;4.
-;Purpose: Converts voltage to temperature (use as a periodic update function)
-;Usage: Call this function Voltage2Temp() and it will take the 10 bit adc value stored in result and result+1 and use it to update the BCD_temp
-;Return: No return, but calling this updates the BCD temp based on the current voltage in the recently read ADC channel
-Voltage2Temp mac
-	lcall ?Voltage2Temp
-endmac
 
 ;4.
-?Voltage2Temp:
-    ;Use math32 functions and voltage -> degrees formula for our thermocouple to convert an input voltage to a temperature BCD   
-    ret
-;6.
 ;Purpose: To read a pushbutton and determine if it is pressed or not
 ;Usage: push_button(#1) checks if button 1 is pressed
 ;Return: 1 in a if button is pressed, 0 in a if button is not pressed    
@@ -136,7 +124,7 @@ push_button mac
 	pop AR2
 endmac
 
-;6.
+;4.
 ?push_button:
 	cjne R2, #1,check2
 	sjmp Button1
@@ -194,7 +182,8 @@ not_pressed:
 	mov a, #0
 	ret
 	
-;7.
+;5.Aport if the temperature does reach a certain level before 1 min has passed. 
+;This indicates that the thermocouples are not placed properly in the system.
 Preheat_Abort mac
 	push AR2
 	push AR3
