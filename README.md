@@ -16,9 +16,9 @@
 
 *Electronic components:* SSR box, [thermocouples]( http://www.thermometricscorp.com/thertypk.html),[operational amplifiers]( http://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf), [potentiometer](http://www.resistorguide.com/potentiometer/), LCD screen, [analog to digital converter (ADC)]( https://cdn-shop.adafruit.com/datasheets/MCP3008.pdf), [voltage inverter]( http://www.ti.com/lit/ds/symlink/tl7660.pdf)
 
+*Schematics and diagrams:*
 
-<a href="https://www.dropbox.com/s/8inusqbrt4eife4/circuit1.jpg?dl=0" target="_blank">Circuit photo</a> 
-
+<a href="https://www.dropbox.com/s/8inusqbrt4eife4/circuit1.jpg?dl=0" target="_blank">Circuit photo</a> </br>
 Circuit schematics: [1](https://www.dropbox.com/s/4hfuhjtyy643e6z/circuit_diagram2.png?dl=0) [2](https://www.dropbox.com/s/4gagmzkupb865ab/circuit_diagram1.png?dl=0)
 
 [Hardware block diagram](https://www.dropbox.com/s/dxfalct1wr18iq8/Hardware%20Block%20Diagram.png?dl=0)
