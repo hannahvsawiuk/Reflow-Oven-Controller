@@ -12,11 +12,11 @@
 
 *IDE:* [CrossIDE](http://crosside.software.informer.com/)
 
-**Microcontrollers:** [Atmel AT89LP52]( http://www.atmel.com/images/doc3709.pdf)
+*Microcontrollers:* [Atmel AT89LP52]( http://www.atmel.com/images/doc3709.pdf)
 
 *Electronic components:* SSR box, [thermocouples]( http://www.thermometricscorp.com/thertypk.html),[operational amplifiers]( http://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf), [potentiometer](http://www.resistorguide.com/potentiometer/), LCD screen, [analog to digital converter (ADC)]( https://cdn-shop.adafruit.com/datasheets/MCP3008.pdf), [voltage inverter]( http://www.ti.com/lit/ds/symlink/tl7660.pdf)
 
-**Detailed description**
+*Detailed description:*
 
 ##### User Interface and Safety Features:
 The experience working with the system inspired a user-friendly interface for the controller. With an LCD and three pushbuttons, an intuitive, cursor-controlled display was created to select and modify the parameters, including reflow time and temperature. With the pushbuttons, the user could navigate between menus, move the cursor, and accurately increment parameters. While this system increased the ease of use for the operator, it also ensured safety, as the selectable values for these parameters were bounded to prevent unsafe behavior. In addition, 8 a pushbutton allowed the user to manually abort the process at any time; further, an automatic process abortion would occur if the temperature within the oven was over 235°C at any point to ensure the PCB’s would not burn. Also, a process abortion occurred if the temperature was lower than 50°C after one minute. This was put in place to ensure that the thermocouples were placed in the oven properly. 
@@ -37,3 +37,5 @@ To validate the temperature, a separate temperature device was used to measure r
 Note: the analog voltages were converted to digital values and then fed into a pin on the AT89 microcontroller, which were converted into temperature values within the code. The temperature is an input to the Mealy machine. An external ADC was necessary since the AT89 did not have one built in.
 
 ### [Full Report](https://www.dropbox.com/s/f4rwnuwflpyrxwa/Final%20Report%201.pdf?dl=0) 
+[Circuit photo](https://www.dropbox.com/s/8inusqbrt4eife4/circuit1.jpg?dl=0)
+Schematics: [1](https://www.dropbox.com/s/4hfuhjtyy643e6z/circuit_diagram2.png?dl=0) [2](https://www.dropbox.com/s/4gagmzkupb865ab/circuit_diagram1.png?dl=0)
