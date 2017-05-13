@@ -1,15 +1,9 @@
 CSEG
-
 ; Christian Schroeder
-
 ; Hannah Sawiuk
-
 ; Jake Osborne
-
 ; ELEC 291, Project 1, Reflow Oven Controller
-
 ; macros.inc
-
 ;-------------------------------------------;
 ;                Functions                  ;
 ;-------------------------------------------;
