@@ -23,7 +23,7 @@ Circuit schematics: [1](https://www.dropbox.com/s/4hfuhjtyy643e6z/circuit_diagra
  [Software block diagram](https://www.dropbox.com/s/04m8l1wg80gv9jt/Software%20block%20diagram.png?dl=0)
 
 *Detailed description:*</br>
-  ##### User Interface and Safety Features: 
+##### User Interface and Safety Features: 
 The experience working with the system inspired a user-friendly interface for the controller. With an LCD and three pushbuttons, an intuitive, cursor-controlled display was created to select and modify the parameters, including reflow time and temperature. With the pushbuttons, the user could navigate between menus, move the cursor, and accurately increment parameters. While this system increased the ease of use for the operator, it also ensured safety, as the selectable values for these parameters were bounded to prevent unsafe behavior. In addition, 8 a pushbutton allowed the user to manually abort the process at any time; further, an automatic process abortion would occur if the temperature within the oven was over 235°C at any point to ensure the PCB’s would not burn. Also, a process abortion occurred if the temperature was lower than 50°C after one minute. This was put in place to ensure that the thermocouples were placed in the oven properly. 
 
 ##### Power Supply and Modulation: 
