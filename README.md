@@ -37,5 +37,6 @@ To validate the temperature, a separate temperature device was used to measure r
 Note: the analog voltages were converted to digital values and then fed into a pin on the AT89 microcontroller, which were converted into temperature values within the code. The temperature is an input to the Mealy machine. An external ADC was necessary since the AT89 did not have one built in.
 
 ### [Full Report](https://www.dropbox.com/s/f4rwnuwflpyrxwa/Final%20Report%201.pdf?dl=0) 
-[Circuit photo](https://www.dropbox.com/s/8inusqbrt4eife4/circuit1.jpg?dl=0)
+<a href="https://www.dropbox.com/s/8inusqbrt4eife4/circuit1.jpg?dl=0" target="_blank">Circuit Photo</a> 
+
 Schematics: [1](https://www.dropbox.com/s/4hfuhjtyy643e6z/circuit_diagram2.png?dl=0) [2](https://www.dropbox.com/s/4gagmzkupb865ab/circuit_diagram1.png?dl=0)
