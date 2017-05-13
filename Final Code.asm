@@ -794,22 +794,6 @@ Abortx:
 	
 DontAbort:
 	clr seconds_flag ;keep clearing the seconds flag so it doesn't accidentally incrmeent seconds more than once
-	;Serially send the current temp so that python can do a stripchart	
-	;Wait_Milli_Seconds(#250)
-	;Wait_Milli_Seconds(#250);wait half a second
-	;Send_BCD(Temperature+2)
-	;Send_BCD(Temperature+1)
-	;mov a, #'.'
-	;lcall putchar
-	;Send_BCD(Temperature+0)
-	;mov a, #' '
-	;lcall putchar
-	;mov a, #'C'
-	;lcall putchar
-    ;mov a,#'\r'
-    ;lcall putchar
-    ;mov a,#'\n'
-    ;lcall putchar	
 	;Here we can check CurrentState flags, IE ReflowState_Flag
 	;Depending on the current set state flag, jump to state loops until that state logic is done (ie when reflow state ends, ReflowState_Flag gets set to zero and CooldownState_Flag gets set to 1)
 	;State loops do their own checks quickly, and come back to the program run loop, which does the constant temp monitoring/display/spi logic
